@@ -13,7 +13,7 @@
     "scripts": {
         "lint": "eslint --ext .js,.ts .",
         "lint:fix": "yarn lint --fix",
-        "build": "rm -rf lib && tsc",
+        "build": "tsc",
         "build:watch": "tsc --watch",
         "start": "yarn build && node lib/index.js",
         "test": "node --experimental-vm-modules ./node_modules/.bin/jest --run-in-band -c jest.config.ts",
