@@ -205,14 +205,16 @@ export default class Ponybook {
             attach();
             const raxConfig = this.getRetryConfig(data);
             this.info("[HTML Downloading] Fetch url ", data);
-            const response = await axios.get<string>(data, {
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            const axiosOptions: any = {
                 raxConfig,
                 timeout: 5000,
                 responseType: "text",
                 httpsAgent: new https.Agent({
                     rejectUnauthorized: this.rejectUnauthorized,
                 }),
-            });
+            };
+            const response = await axios.get<string>(data, axiosOptions);
             const html = response.data;
             if (html) {
                 this.resolvePonybookContentOptions(id, options, formatter, html);
@@ -356,15 +358,17 @@ export default class Ponybook {
                 try {
                     const raxConfig = this.getRetryConfig(url);
                     this.info("[CSS Downloading] Fetch url ", url);
-                    // eslint-disable-next-line no-await-in-loop
-                    const response = await axios.get<string>(url, {
+                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                    const options: any = {
                         raxConfig,
                         timeout: 50000,
                         responseType: "text",
                         httpsAgent: new https.Agent({
                             rejectUnauthorized: this.rejectUnauthorized,
                         }),
-                    });
+                    };
+                    // eslint-disable-next-line no-await-in-loop
+                    const response = await axios.get<string>(url, options);
 
                     importedCss += `\n${response.data}`;
                 } catch (err) {
