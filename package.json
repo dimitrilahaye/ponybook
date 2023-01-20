@@ -1,11 +1,11 @@
 {
     "name": "@dimitrilahaye/ponybook",
     "description": "Convert html contents into ebook. Each content can come from an url, a file or a string.",
-    "version": "1.0.0",
-    "repository": "dimitrilahaye/html-to-epub",
-	"homepage": "https://github.com/dimitrilahaye/html-to-epub#readme",
+    "version": "1.0.1",
+    "repository": "dimitrilahaye/ponybook",
+	"homepage": "https://github.com/dimitrilahaye/ponybook#readme",
 	"bugs": {
-		"url": "https://github.com/dimitrilahaye/html-to-epub/issues"
+		"url": "https://github.com/dimitrilahaye/ponybook/issues"
 	},
 	"publishConfig": {
 		"access": "public"
