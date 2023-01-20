@@ -1,0 +1,7 @@
+*.epub
+TODO.md
+node_modules
+*.xcf
+yarn-error.log
+lib
+.vscode

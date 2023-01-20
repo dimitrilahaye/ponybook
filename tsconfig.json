@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "outDir": "lib",
+    "module": "es2020",
+    "moduleResolution": "node",
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "sourceMap": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "declaration": true,
+    "declarationDir": "lib",
+    "lib": [
+      "es2020",
+      "DOM"
+    ]
+  },
+  "compileOnSave": true,
+  "include": [
+    "src/**/*",
+  ],
+  "exclude": [
+    "__tests__",
+    "node_modules",
+  ],
+}
