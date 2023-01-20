@@ -2,8 +2,7 @@ import path from "path";
 
 import { JSDOM } from "jsdom";
 
-import { CssFormatter } from "../lib/index.d";
-import Ponybook, { ContentOptionsFormatter, HtmlFormatter } from "../src/index";
+import Ponybook, { CssFormatter, ContentOptionsFormatter, HtmlFormatter } from "../src/index";
 import { assertBuffer, assertOuput, getOptions } from "./utils";
 
 const HTML_CONTENT = "https://example.com/";
