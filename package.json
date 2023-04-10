@@ -1,7 +1,7 @@
 {
     "name": "@dimitrilahaye/ponybook",
     "description": "Convert html contents into ebook. Each content can come from an url, a file or a string.",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "repository": "dimitrilahaye/ponybook",
 	"homepage": "https://github.com/dimitrilahaye/ponybook#readme",
 	"bugs": {
